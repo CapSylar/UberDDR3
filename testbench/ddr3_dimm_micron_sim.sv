@@ -149,8 +149,8 @@ ddr3_top #(
     .COL_BITS(COL_BITS), //width of column address
     .BA_BITS(BA_BITS), //width of bank address
     .DQ_BITS(8),  //width of DQ
-    .CONTROLLER_CLK_PERIOD(CONTROLLER_CLK_PERIOD), //ns, period of clock input to this DDR3 controller module
-    .DDR3_CLK_PERIOD(DDR3_CLK_PERIOD), //ns, period of clock input to DDR3 RAM device 
+    .CONTROLLER_CLK_PERIOD(CONTROLLER_CLK_PERIOD*1000), //ns, period of clock input to this DDR3 controller module
+    .DDR3_CLK_PERIOD(DDR3_CLK_PERIOD*1000), //ns, period of clock input to DDR3 RAM device 
     .ODELAY_SUPPORTED(ODELAY_SUPPORTED), //set to 1 when ODELAYE2 is supported
     .LANES(LANES), //8 lanes of DQ
     .AUX_WIDTH(AUX_WIDTH),
